@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary
+  m_EditorClassIdentifier: 
+  m_GuidLow: 0
+  m_GuidHigh: 0
+  m_DataStore:
+    m_Storage: []
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5114600454658587237
+      m_GuidHigh: 3165020379046020778
+    m_SerializedTextureGuid:
+      m_GuidLow: 5738842387350746723
+      m_GuidHigh: 281997926308445056
+    m_Size: {x: 0.2, y: 0.2}
+    m_SpecifySize: 1
+    m_Name: EmojiOne
+    m_Texture: {fileID: 2800000, guid: dffef66376be4fa480fb02b19edbe903, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5049007221275538532
+      m_GuidHigh: 14101744447320422565
+    m_SerializedTextureGuid:
+      m_GuidLow: 6153130748411675955
+      m_GuidHigh: 14073517423740895210
+    m_Size: {x: 0.15, y: 0.08217822}
+    m_SpecifySize: 1
+    m_Name: LandhuisLogo
+    m_Texture: {fileID: 2800000, guid: a39c85334fd05564eabf583e882d4fc3, type: 3}
