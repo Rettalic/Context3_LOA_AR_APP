@@ -5,11 +5,8 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/ImageTracking.unity
-    guid: 00dc4873c3632f542ad7ad8c47c5a99a
   - enabled: 1
-    path: Assets/Scenes/BlankAR.unity
+    path: Assets/02_Scenes/BlankAR.unity
     guid: 6bdce89659816455b9f906fc62d19910
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 744b813df90924c169af73489b8325de,
