@@ -5,7 +5,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DialogSystem : MonoBehaviour {
+public class DialogSystem : MonoBehaviour
+{
     private static readonly Dictionary<string, bool> conditions = new();
 
     [Header("References")]
@@ -38,7 +39,8 @@ public class DialogSystem : MonoBehaviour {
     private int index;
     private bool IsWriting;
 
-    private void Awake() {
+    private void Awake()
+    {
         foreach (var item in conditionNames)
             conditions.Add(item, false);
 
@@ -53,21 +55,35 @@ public class DialogSystem : MonoBehaviour {
             Files.Add(item.name, item.ToString().Replace("\n\r\n", "\n").Split("\n"));
     }
 
-    private void Update() {
-        if (Input.GetKeyDown(KeyCode.S)) 
+    private void OnEnable()
+    {
+        EventManager<DialogueEventType, string>.Subscribe(DialogueEventType.startDialogue, SetDialog);
+    }
+
+    private void OnDisable()
+    {
+        EventManager<DialogueEventType, string>.Unsubscribe(DialogueEventType.startDialogue, SetDialog);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
             SetDialog("Test 1");
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
             NextLine();
     }
 
-    public static void SetCondition(string settingName) {
-        if (conditions.ContainsKey(settingName)) 
+    public static void SetCondition(string settingName)
+    {
+        if (conditions.ContainsKey(settingName))
             conditions[settingName] = true;
     }
 
-    private void SetDialog(string DialogName) {
-        if (Files.ContainsKey(DialogName)) {
+    private void SetDialog(string DialogName)
+    {
+        if (Files.ContainsKey(DialogName))
+        {
             index = 0;
             currentDialog = Files[DialogName];
             dialogueSystemObject.SetActive(true);
@@ -78,62 +94,70 @@ public class DialogSystem : MonoBehaviour {
         Debug.LogError("No File named " + DialogName + " found!");
     }
 
-    private void StopDialog() {
+    private void StopDialog()
+    {
         StopAllCoroutines();
         RemoveOptions();
-        
+
         mainText.text = "";
         nameText.text = "";
-        
+
         currentDialog = null;
         IsWriting = false;
-        
+
         index = 0;
 
         dialogueSystemObject.SetActive(false);
     }
 
-    private void NextLine() {
+    private void NextLine()
+    {
         if (currentDialog == null)
             return;
 
-        if (IsWriting) {
+        if (IsWriting)
+        {
             FullLine(currentDialog[index - 1].Trim());
             return;
         }
 
-        if (index >= currentDialog.Length) {
+        if (index >= currentDialog.Length)
+        {
             StopDialog();
             return;
         }
 
         CurrentTimeBetweenChars = timeBetweenChars;
 
-        if (TryCheckCommand(currentDialog[index], commandChar, out string[] product)) {
+        if (TryCheckCommand(currentDialog[index], commandChar, out string[] product))
+        {
             CallCommand(product);
             index++;
             NextLine();
             return;
         }
 
-        if (TryCheckCommand(currentDialog[index], optionChar, out string[] optionProduct)) {
+        if (TryCheckCommand(currentDialog[index], optionChar, out string[] optionProduct))
+        {
             DisplayOptions(currentDialog);
             return;
         }
 
-        if (TryCheckCommand(currentDialog[index], sectionChar, out string[] sectionProduct)) {
-            switch (sectionProduct[1].Trim()) {
+        if (TryCheckCommand(currentDialog[index], sectionChar, out string[] sectionProduct))
+        {
+            switch (sectionProduct[1].Trim())
+            {
                 case "jump":
                     JumpToSection(ConditionChecker(sectionProduct));
                     return;
                 case "stop":
                     StopDialog();
                     return;
-                
+
                 case "end":
                 case "wait":
                     return;
-                
+
                 default:
                     index++;
                     NextLine();
@@ -145,63 +169,72 @@ public class DialogSystem : MonoBehaviour {
         index++;
     }
 
-    private void DisplayLine() {
+    private void DisplayLine()
+    {
         StopAllCoroutines();
         StartCoroutine(DisplayText(currentDialog[index].Trim()));
     }
 
     #region Commands
-    private bool TryCheckCommand(string line, char commandChar, out string[] product) {
+    private bool TryCheckCommand(string line, char commandChar, out string[] product)
+    {
         product = null;
         char[] tmp = line.Trim().ToCharArray();
 
         if (tmp.Length < 1)
             return false;
 
-        if (tmp[0] == commandChar) {
+        if (tmp[0] == commandChar)
+        {
             product = line.Split(" ");
             return true;
         }
-        
+
         return false;
     }
 
-    private void CallCommand(string[] command) {
+    private void CallCommand(string[] command)
+    {
         if (command.Length < 3)
             EventManager<DialogEvents>.Invoke(ParseEnum<DialogEvents>(command[1].ToUpper()));
-        else if(float.TryParse(command[2], out var floatParse))
+        else if (float.TryParse(command[2], out var floatParse))
             EventManager<DialogEvents, float>.Invoke(ParseEnum<DialogEvents>(command[1]), floatParse);
         else if (bool.TryParse(command[2], out var boolParse))
             EventManager<DialogEvents, bool>.Invoke(ParseEnum<DialogEvents>(command[1]), boolParse);
-        else 
+        else
             EventManager<DialogEvents, string>.Invoke(ParseEnum<DialogEvents>(command[1]), command[2]);
     }
 
-    private T ParseEnum<T>(string value) {
+    private T ParseEnum<T>(string value)
+    {
         return (T)Enum.Parse(typeof(T), value, true);
     }
     #endregion
 
     #region Options
-    private void DisplayOptions(string[] file) {
+    private void DisplayOptions(string[] file)
+    {
         buttonPanel.SetActive(true);
 
         List<GameObject> buttons = new();
 
-        while (TryCheckCommand(file[index], optionChar, out string[] optionProduct)) {
+        while (TryCheckCommand(file[index], optionChar, out string[] optionProduct))
+        {
             var tmpButton = Instantiate(buttonPrefab, buttonContainer.transform);
             tmpButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = file[index].Trim().Split(" ", 2)[1];
             tmpButton.GetComponent<Button>().onClick.AddListener(RemoveOptions);
 
             index++;
 
-            if (TryCheckCommand(file[index], sectionChar, out string[] product)) {
-                if (product[1] == "jump") {
+            if (TryCheckCommand(file[index], sectionChar, out string[] product))
+            {
+                if (product[1] == "jump")
+                {
                     string sectionName = ConditionChecker(product);
                     if (!string.IsNullOrEmpty(sectionName))
                         tmpButton.GetComponent<Button>().onClick.AddListener(() => JumpToSection(sectionName));
                 }
-                else if (product[1].Trim() == "stop") 
+                else if (product[1].Trim() == "stop")
                     tmpButton.GetComponent<Button>().onClick.AddListener(StopDialog);
             }
 
@@ -210,7 +243,8 @@ public class DialogSystem : MonoBehaviour {
         }
 
         RectTransform containerRect = buttonContainer.GetComponent<RectTransform>();
-        for (int i = 0; i < buttons.Count; i++) {
+        for (int i = 0; i < buttons.Count; i++)
+        {
             var rect = buttons[i].GetComponent<RectTransform>();
             float yOffset = (buttons.Count % 2 != 0) ?
                 containerRect.sizeDelta.y / buttons.Count * (buttons.Count - 1 - i - buttons.Count / 2) :
@@ -221,13 +255,16 @@ public class DialogSystem : MonoBehaviour {
         }
     }
 
-    private string ConditionChecker(string[] product) {
+    private string ConditionChecker(string[] product)
+    {
         string sectionName = product[2];
 
-        if (product[2] == "if") {
+        if (product[2] == "if")
+        {
             if (conditions.ContainsKey(product[3]))
                 sectionName = conditions[product[3]] ? product[4] : product[6];
-            else {
+            else
+            {
                 Debug.LogError("Condition: " + product[3] + " does not Exist. " +
                     "Make sure the condition is typed exactly the same as in the inspector, " +
                     "or add it in the inspector.");
@@ -238,18 +275,22 @@ public class DialogSystem : MonoBehaviour {
         return sectionName;
     }
 
-    private void RemoveOptions() {
+    private void RemoveOptions()
+    {
         buttonPanel.SetActive(false);
 
-        for (int i = buttonContainer.transform.childCount - 1; i >= 0; i--) 
+        for (int i = buttonContainer.transform.childCount - 1; i >= 0; i--)
             Destroy(buttonContainer.transform.GetChild(i).gameObject);
     }
     #endregion
 
-    private void JumpToSection(string sectionName) {
-        for (int i = 0; i < currentDialog.Length; i++) {
+    private void JumpToSection(string sectionName)
+    {
+        for (int i = 0; i < currentDialog.Length; i++)
+        {
             if (TryCheckCommand(currentDialog[i], sectionChar, out string[] command))
-                if (command[1] == "start" && command[2] == sectionName) {
+                if (command[1] == "start" && command[2] == sectionName)
+                {
                     index = i;
                     NextLine();
                     return;
@@ -257,7 +298,8 @@ public class DialogSystem : MonoBehaviour {
         }
     }
 
-    private IEnumerator DisplayText(string text) {
+    private IEnumerator DisplayText(string text)
+    {
         IsWriting = true;
 
         yield return new WaitForEndOfFrame();
@@ -265,17 +307,20 @@ public class DialogSystem : MonoBehaviour {
         List<char> charList = new();
 
         string sentence = SetupLine(text);
-        for (int i = 0; i < sentence.Length; i++) {
-            if (sentence[i] == commandChar) 
+        for (int i = 0; i < sentence.Length; i++)
+        {
+            if (sentence[i] == commandChar)
                 HandleInlineCommand(sentence, ref i);
 
-            if (sentence[i] == '<') {
+            if (sentence[i] == '<')
+            {
                 List<char> stylePartOne = ReadUntilChar(sentence, ref i, '>', true);
                 List<char> textBetween = ReadUntilChar(sentence, ref i, '<');
                 List<char> stylePartTwo = ReadUntilChar(sentence, ref i, '>', true);
 
                 List<char> tmp = new();
-                for (int j = 0; j < textBetween.Count; j++) {
+                for (int j = 0; j < textBetween.Count; j++)
+                {
                     tmp.Add(textBetween[j]);
 
                     var Final = new List<char>(charList);
@@ -308,16 +353,18 @@ public class DialogSystem : MonoBehaviour {
         IsWriting = false;
     }
 
-    private void FullLine(string text) {
+    private void FullLine(string text)
+    {
         StopAllCoroutines();
 
         List<char> charList = new();
 
         string sentence = SetupLine(text);
-        for (int i = 0; i < sentence.Length; i++) {
+        for (int i = 0; i < sentence.Length; i++)
+        {
             if (sentence[i] == commandChar)
                 HandleInlineCommand(sentence, ref i);
-            
+
             charList.Add(sentence[i]);
         }
 
@@ -328,8 +375,10 @@ public class DialogSystem : MonoBehaviour {
     }
 
     #region DisplayMethods
-    private void HandleInlineCommand(string sentence, ref int index) {
-        List<char> command = new() {
+    private void HandleInlineCommand(string sentence, ref int index)
+    {
+        List<char> command = new()
+        {
             sentence[index]
         };
         index++;
@@ -339,14 +388,17 @@ public class DialogSystem : MonoBehaviour {
         CallCommand(new string(command.ToArray()).Split(" "));
     }
 
-    private List<char> ReadUntilChar(string sentence, ref int index, char target, bool includeTarget = false) {
+    private List<char> ReadUntilChar(string sentence, ref int index, char target, bool includeTarget = false)
+    {
         List<char> result = new();
 
-        while (index < sentence.Length && sentence[index] != target) {
+        while (index < sentence.Length && sentence[index] != target)
+        {
             result.Add(sentence[index]);
             index++;
         }
-        if (includeTarget) {
+        if (includeTarget)
+        {
             result.Add(sentence[index]);
             index++;
         }
@@ -354,7 +406,8 @@ public class DialogSystem : MonoBehaviour {
         return result;
     }
 
-    private string SetupLine(string text) {
+    private string SetupLine(string text)
+    {
         string[] frontAndBack = text.Split(" ", 2);
         string name = frontAndBack[0];
         nameText.text = name;
@@ -362,8 +415,10 @@ public class DialogSystem : MonoBehaviour {
         return frontAndBack[1];
     }
 
-    private void CheckForAutoSkip() {
-        if (TryCheckCommand(currentDialog[index], autoNextChar, out string[] autoSkip)) {
+    private void CheckForAutoSkip()
+    {
+        if (TryCheckCommand(currentDialog[index], autoNextChar, out string[] autoSkip))
+        {
             index++;
             IsWriting = false;
             NextLine();
