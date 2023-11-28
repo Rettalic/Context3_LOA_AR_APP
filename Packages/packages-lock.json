@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.diesel.utilities": {
+      "version": "https://github.com/Emerald001/DieselUtilities_Base.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "ba26770237d40c0fa9d66babfbc9c3472351f36d"
+    },
     "com.unity.collab-proxy": {
       "version": "2.2.0",
       "depth": 0,
