@@ -24,7 +24,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -82,7 +82,183 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: character_wip_idle_animation(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface17_f_36:Chararacter_WIP1
+      parentName: character_wip_idle_animation(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface17_f_36:Hips
+      parentName: character_wip_idle_animation(Clone)
+      position: {x: 0.026842035, y: 12.162303, z: -0.29955092}
+      rotation: {x: -0.008550322, y: 0.676147, z: -0.00931551, w: 0.7366582}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: polySurface17_f_36:LeftUpLeg
+      parentName: polySurface17_f_36:Hips
+      position: {x: -0.48555008, y: -0.7213086, z: -1.3764496}
+      rotation: {x: -0.000065838634, y: 0.026909858, z: 0.9996349, w: 0.0024458035}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000001}
+    - name: polySurface17_f_36:LeftLeg
+      parentName: polySurface17_f_36:LeftUpLeg
+      position: {x: 3.5527136e-17, y: 5.4764295, z: -1.4210854e-16}
+      rotation: {x: -0.026735444, y: -0.0005968402, z: 0.022311747, w: 0.9993934}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: polySurface17_f_36:LeftFoot
+      parentName: polySurface17_f_36:LeftLeg
+      position: {x: -0, y: 4.83839, z: -1.4210854e-16}
+      rotation: {x: -0.35537374, y: -0.6156019, z: 0.3631842, w: -0.602363}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: polySurface17_f_36:LeftToeBase
+      parentName: polySurface17_f_36:LeftFoot
+      position: {x: -0, y: 1.6455383, z: -7.105427e-17}
+      rotation: {x: -0.2657499, y: -0.010294792, z: 0.002838149, w: -0.9639828}
+      scale: {x: 1.0000005, y: 1.0000002, z: 1.0000002}
+    - name: polySurface17_f_36:LeftToe_End
+      parentName: polySurface17_f_36:LeftToeBase
+      position: {x: -0, y: 0.67285216, z: -2.220446e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface17_f_36:Spine
+      parentName: polySurface17_f_36:Hips
+      position: {x: -0.08989219, y: 1.2997022, z: 4.4408918e-17}
+      rotation: {x: -7.2716205e-10, y: -2.6020852e-18, z: 0.03452, w: 0.999404}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface17_f_36:Spine1
+      parentName: polySurface17_f_36:Spine
+      position: {x: -0, y: 1.5199407, z: 0}
+      rotation: {x: -0.0000000010913933, y: -6.3318955e-17, z: 0.000000029802322,
+        w: 1}
+      scale: {x: 0.9999998, y: 0.9999999, z: 1}
+    - name: polySurface17_f_36:Spine2
+      parentName: polySurface17_f_36:Spine1
+      position: {x: -0, y: 1.7370756, z: 0}
+      rotation: {x: 5.456965e-10, y: -0.0000000029103833, z: -3.1763727e-18, w: 1}
+      scale: {x: 1.0000004, y: 0.99999994, z: 1.0000005}
+    - name: polySurface17_f_36:LeftShoulder
+      parentName: polySurface17_f_36:Spine2
+      position: {x: -0.055238128, y: 1.5731611, z: -0.8359207}
+      rotation: {x: 0.027894454, y: -0.58339596, z: 0.81143993, w: 0.020887904}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000002}
+    - name: polySurface17_f_36:LeftArm
+      parentName: polySurface17_f_36:LeftShoulder
+      position: {x: -0, y: 1.8502444, z: 2.2737367e-15}
+      rotation: {x: -0.13827167, y: -0.0011665003, z: -0.011485544, w: 0.99032706}
+      scale: {x: 1.0000004, y: 1.0000007, z: 1.0000012}
+    - name: polySurface17_f_36:LeftForeArm
+      parentName: polySurface17_f_36:LeftArm
+      position: {x: -0, y: 1.6273375, z: -2.2737367e-15}
+      rotation: {x: 0.008880764, y: 0.00099257, z: 0.024585573, w: 0.99965787}
+      scale: {x: 0.9999998, y: 1, z: 1}
+    - name: polySurface17_f_36:LeftHand
+      parentName: polySurface17_f_36:LeftForeArm
+      position: {x: 2.842171e-16, y: 3.6310327, z: 0}
+      rotation: {x: -0.0007533765, y: -0.00007027224, z: 0.09294285, w: 0.9956712}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1}
+    - name: polySurface17_f_36:LeftHandIndex1
+      parentName: polySurface17_f_36:LeftHand
+      position: {x: 5.684342e-16, y: 1.9717579, z: 0}
+      rotation: {x: 0.074286826, y: -0.009952776, z: -0.023668978, w: 0.99690634}
+      scale: {x: 1.0000004, y: 1.0000008, z: 0.99999994}
+    - name: polySurface17_f_36:LeftHandIndex2
+      parentName: polySurface17_f_36:LeftHandIndex1
+      position: {x: -0, y: 0.15942343, z: 0}
+      rotation: {x: 0.108711004, y: -0.0000001611187, z: 0.05633172, w: 0.992476}
+      scale: {x: 1.0000001, y: 1.0000005, z: 1.0000006}
+    - name: polySurface17_f_36:LeftHandIndex3
+      parentName: polySurface17_f_36:LeftHandIndex2
+      position: {x: 0.039637458, y: 0.26279306, z: -0.07649301}
+      rotation: {x: -0.03964808, y: 0.008824336, z: 0.0097710835, w: 0.999127}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: polySurface17_f_36:LeftHandIndex4
+      parentName: polySurface17_f_36:LeftHandIndex3
+      position: {x: 0.047789764, y: 0.24924003, z: -0.031180166}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface17_f_36:RightShoulder
+      parentName: polySurface17_f_36:Spine2
+      position: {x: 0.0022538642, y: 1.5691849, z: 0.8359207}
+      rotation: {x: 0.81248057, y: 0.009293701, z: -0.006567067, w: 0.5828773}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000004}
+    - name: polySurface17_f_36:RightArm
+      parentName: polySurface17_f_36:RightShoulder
+      position: {x: -2.842171e-16, y: 1.8502444, z: 0}
+      rotation: {x: -0.13495661, y: 0.007481903, z: -0.03005942, w: 0.99036723}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: polySurface17_f_36:RightForeArm
+      parentName: polySurface17_f_36:RightArm
+      position: {x: 2.842171e-16, y: 1.6193321, z: 0}
+      rotation: {x: 0.011932445, y: 0.00047943124, z: 0.013085748, w: 0.99984306}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1.0000005}
+    - name: polySurface17_f_36:RightHand
+      parentName: polySurface17_f_36:RightForeArm
+      position: {x: -0, y: 3.6317596, z: 0}
+      rotation: {x: -0.0033255327, y: 0.00005148333, z: -0.015475925, w: 0.9998748}
+      scale: {x: 1.0000004, y: 1.0000006, z: 1.0000004}
+    - name: polySurface17_f_36:RightHandIndex1
+      parentName: polySurface17_f_36:RightHand
+      position: {x: -0, y: 1.9948847, z: 2.2737367e-15}
+      rotation: {x: 0.066676535, y: -0.0035908907, z: -0.053656787, w: 0.9963244}
+      scale: {x: 0.99999994, y: 0.9999996, z: 0.99999994}
+    - name: polySurface17_f_36:RightHandIndex2
+      parentName: polySurface17_f_36:RightHandIndex1
+      position: {x: -0, y: 0.1594314, z: 0}
+      rotation: {x: 0.0115803825, y: -0.00000022887247, z: -0.029234089, w: 0.9995056}
+      scale: {x: 1.0000001, y: 1.0000006, z: 1.0000002}
+    - name: polySurface17_f_36:RightHandIndex3
+      parentName: polySurface17_f_36:RightHandIndex2
+      position: {x: -0.03390639, y: 0.2532621, z: -0.013433625}
+      rotation: {x: 0.0008910816, y: -0.0027303668, z: -0.053729028, w: 0.9985514}
+      scale: {x: 1.0000002, y: 1.0000006, z: 1.0000005}
+    - name: polySurface17_f_36:RightHandIndex4
+      parentName: polySurface17_f_36:RightHandIndex3
+      position: {x: -0.06918004, y: 0.20946594, z: -0.01179107}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface17_f_36:Neck
+      parentName: polySurface17_f_36:Spine2
+      position: {x: 0.00000009006822, y: 1.9542094, z: 2.220446e-18}
+      rotation: {x: -2.822571e-10, y: 0.0000000029777194, z: -0.034520037, w: 0.999404}
+      scale: {x: 1.0000006, y: 1.0000001, z: 1.0000006}
+    - name: polySurface17_f_36:Head
+      parentName: polySurface17_f_36:Neck
+      position: {x: -0.11550699, y: 1.5641638, z: 5.7731595e-17}
+      rotation: {x: -3.637978e-10, y: -0.0000000029103826, z: 0.000000018626451, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: polySurface17_f_36:HeadTop_End
+      parentName: polySurface17_f_36:Head
+      position: {x: -0.19383216, y: 2.6248217, z: 9.7699626e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: polySurface17_f_36:RightUpLeg
+      parentName: polySurface17_f_36:Hips
+      position: {x: -0.106011085, y: -0.7213086, z: 1.3764496}
+      rotation: {x: 0.0011465538, y: -0.026885504, z: 0.9987301, w: 0.042591084}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000002}
+    - name: polySurface17_f_36:RightLeg
+      parentName: polySurface17_f_36:RightUpLeg
+      position: {x: 1.4210854e-16, y: 5.496319, z: 1.4210854e-16}
+      rotation: {x: 0.026687574, y: 0.0016910397, z: 0.06321469, w: 0.9976417}
+      scale: {x: 1, y: 0.99999994, z: 0.99999964}
+    - name: polySurface17_f_36:RightFoot
+      parentName: polySurface17_f_36:RightLeg
+      position: {x: -7.105427e-17, y: 4.838674, z: -1.4210854e-16}
+      rotation: {x: 0.36142015, y: 0.6032987, z: -0.35351217, w: 0.6167944}
+      scale: {x: 1.0000002, y: 1, z: 0.99999994}
+    - name: polySurface17_f_36:RightToeBase
+      parentName: polySurface17_f_36:RightFoot
+      position: {x: -1.4210854e-16, y: 1.6257027, z: -7.105427e-17}
+      rotation: {x: 0.2693542, y: -0.009494065, z: 0.0026555357, w: 0.96299076}
+      scale: {x: 0.99999964, y: 0.9999998, z: 0.99999976}
+    - name: polySurface17_f_36:RightToe_End
+      parentName: polySurface17_f_36:RightToeBase
+      position: {x: -0, y: 0.68201417, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -93,7 +269,7 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
