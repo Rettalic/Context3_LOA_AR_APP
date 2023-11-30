@@ -33,7 +33,27 @@ MonoBehaviour:
     m_SerializedTextureGuid:
       m_GuidLow: 17056508845864582895
       m_GuidHigh: 7093815647399034922
-    m_Size: {x: 0.05, y: 0.049601596}
+    m_Size: {x: 0.1, y: 0.09920319}
     m_SpecifySize: 1
+    m_Name: Vogeltje
+    m_Texture: {fileID: 2800000, guid: 1210feefe46decb42ac05325bf4b7262, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5577084098834547728
+      m_GuidHigh: 15020104044962570628
+    m_SerializedTextureGuid:
+      m_GuidLow: 17056508845864582895
+      m_GuidHigh: 7093815647399034922
+    m_Size: {x: 0.02, y: 0.019840637}
+    m_SpecifySize: 1
+    m_Name: Vogeltje
+    m_Texture: {fileID: 2800000, guid: 1210feefe46decb42ac05325bf4b7262, type: 3}
+  - m_SerializedGuid:
+      m_GuidLow: 5535960640491154499
+      m_GuidHigh: 9296279640543177149
+    m_SerializedTextureGuid:
+      m_GuidLow: 17056508845864582895
+      m_GuidHigh: 7093815647399034922
+    m_Size: {x: 0, y: 0}
+    m_SpecifySize: 0
     m_Name: Vogeltje
     m_Texture: {fileID: 2800000, guid: 1210feefe46decb42ac05325bf4b7262, type: 3}
