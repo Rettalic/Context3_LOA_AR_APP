@@ -18,6 +18,8 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private GameObject buttonPanel;
     [SerializeField] private GameObject buttonPrefab;
 
+    public string textFile;
+
     [Header("CommandSettings")]
     [SerializeField] private char commandChar;
     [SerializeField] private char optionChar;
@@ -49,9 +51,9 @@ public class DialogSystem : MonoBehaviour
 
         CurrentTimeBetweenChars = timeBetweenChars;
 
-        var tmp = Resources.LoadAll<TextAsset>("Files/");
+        var fileName = Resources.LoadAll<TextAsset>("Files/");
 
-        foreach (var item in tmp)
+        foreach (var item in fileName)
             Files.Add(item.name, item.ToString().Replace("\n\r\n", "\n").Split("\n"));
     }
 
@@ -68,7 +70,7 @@ public class DialogSystem : MonoBehaviour
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.S))
-            SetDialog("Test 1");
+            SetDialog(textFile);
 
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
             NextLine();

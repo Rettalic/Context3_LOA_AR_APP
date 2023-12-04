@@ -6,6 +6,7 @@ public class DialogueButtons : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
+            //TO DO: Make the string changeable.
             EventManager<DialogueEventType, string>.Invoke(DialogueEventType.startDialogue, "Test 1");
         }
     }
