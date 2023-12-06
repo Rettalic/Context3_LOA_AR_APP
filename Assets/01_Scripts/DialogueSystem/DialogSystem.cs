@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class DialogSystem : MonoBehaviour
 {
@@ -13,12 +14,13 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private GameObject dialogueSystemObject;
     [SerializeField] private TextMeshProUGUI mainText;
     [SerializeField] private TextMeshProUGUI nameText;
+    [SerializeField] private int nameLength;
     [SerializeField] private Image portrait;
     [SerializeField] private GameObject buttonContainer;
     [SerializeField] private GameObject buttonPanel;
     [SerializeField] private GameObject buttonPrefab;
 
-    public string textFile;
+    public string textFile = "OchtendGesprek";
 
     [Header("CommandSettings")]
     [SerializeField] private char commandChar;
@@ -248,12 +250,8 @@ public class DialogSystem : MonoBehaviour
         for (int i = 0; i < buttons.Count; i++)
         {
             var rect = buttons[i].GetComponent<RectTransform>();
-            float yOffset = (buttons.Count % 2 != 0) ?
-                containerRect.sizeDelta.y / buttons.Count * (buttons.Count - 1 - i - buttons.Count / 2) :
-                containerRect.sizeDelta.y / buttons.Count * (buttons.Count - 1 - i - buttons.Count / 2) + containerRect.sizeDelta.y / 2 / buttons.Count;
-
-            rect.localPosition = new Vector2(0, yOffset);
-            rect.sizeDelta = new Vector2(containerRect.sizeDelta.x, (containerRect.sizeDelta.y / buttons.Count) - 1);
+            rect.localPosition = new Vector2(0, 0);
+            rect.sizeDelta = new Vector2(400, 40);
         }
     }
 
@@ -410,11 +408,18 @@ public class DialogSystem : MonoBehaviour
 
     private string SetupLine(string text)
     {
-        string[] frontAndBack = text.Split(" ", 2);
-        string name = frontAndBack[0];
+        // Find the index of the first colon in the processed text
+        int colonIndex = text.IndexOf(':');
+
+        // Extract the name and dialogue based on the position of the first colon
+        string name     = colonIndex != -1 ? text.Substring(0, colonIndex).Trim()  : text;
+        string dialogue = colonIndex != -1 ? text.Substring(colonIndex + 1).Trim() : string.Empty;
+
+        // Set the name in nameText
         nameText.text = name;
 
-        return frontAndBack[1];
+        // Return the remaining part of the processed text as dialogue
+        return dialogue;
     }
 
     private void CheckForAutoSkip()
