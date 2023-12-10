@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
 
 public class DialogSystem : MonoBehaviour
 {
@@ -14,7 +13,6 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private GameObject dialogueSystemObject;
     [SerializeField] private TextMeshProUGUI mainText;
     [SerializeField] private TextMeshProUGUI nameText;
-    [SerializeField] private int nameLength;
     [SerializeField] private Image portrait;
     [SerializeField] private GameObject buttonContainer;
     [SerializeField] private GameObject buttonPanel;
@@ -191,6 +189,11 @@ public class DialogSystem : MonoBehaviour
         if (tmp[0] == commandChar)
         {
             product = line.Split(" ");
+            for (int i = 0; i < product.Length; i++)
+            {
+
+                Debug.Log(product[i]);
+            }
             return true;
         }
 
@@ -232,8 +235,11 @@ public class DialogSystem : MonoBehaviour
 
             if (TryCheckCommand(file[index], sectionChar, out string[] product))
             {
+                Debug.Log(product[1]);
                 if (product[1] == "jump")
                 {
+                    Debug.Log("here");
+
                     string sectionName = ConditionChecker(product);
                     if (!string.IsNullOrEmpty(sectionName))
                         tmpButton.GetComponent<Button>().onClick.AddListener(() => JumpToSection(sectionName));
@@ -286,6 +292,7 @@ public class DialogSystem : MonoBehaviour
 
     private void JumpToSection(string sectionName)
     {
+        Debug.Log("1");
         for (int i = 0; i < currentDialog.Length; i++)
         {
             if (TryCheckCommand(currentDialog[i], sectionChar, out string[] command))
@@ -412,7 +419,7 @@ public class DialogSystem : MonoBehaviour
         int colonIndex = text.IndexOf(':');
 
         // Extract the name and dialogue based on the position of the first colon
-        string name     = colonIndex != -1 ? text.Substring(0, colonIndex).Trim()  : text;
+        string name = colonIndex != -1 ? text.Substring(0, colonIndex).Trim() : text;
         string dialogue = colonIndex != -1 ? text.Substring(colonIndex + 1).Trim() : string.Empty;
 
         // Set the name in nameText
