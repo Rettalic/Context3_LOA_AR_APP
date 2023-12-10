@@ -3,7 +3,7 @@ Gerard Godard Taets van Amerongen: Met de eerste zonnestralen die door het raam 
 Gerard Godard Taets van Amerongen: Laat ons samen deze ochtend beleven in de vogeltjeskamer, waar kunst en natuur harmoniëren, en moge de schoonheid van deze momenten als een zachte melodie in uw herinnering blijven.
 
 
-% start OptionSection  
+	% start OptionSection  
 
 @ Kunt u wat meer vertellen over u zelf?
 	% jump SectionOne
@@ -15,37 +15,37 @@ Gerard Godard Taets van Amerongen: Laat ons samen deze ochtend beleven in de vog
 
 % start SectionOne
 
-Unknown: You are $ SET_TYPE_TIME 0,2 $ indeed $ SET_TYPE_TIME 0,05 $ gay
-Gerard Godard Taets van Amerongen: Het zij mij een eer en genoegen om mijzelf aan u voor te stellen. Ik ben Gerard Godard Taets van Amerongen, geboren in het jaar 1729 en Heer van Oud Amelisweerd vanaf het jaar 1761 tot aan mijn overlijden in 1804. In het jaar 1751 voltrok zich een verbond dat niet alleen mijn leven verrijkte, maar ook de geschiedenis van Oud Amelisweerd kleur gaf. Ik trad in het huwelijk met Anna Susanna Hasselaer. 
-% jump OptionSection
+	Unknown: You are $ SET_TYPE_TIME 0,2 $ indeed $ SET_TYPE_TIME 0,05 $ gay
+	Gerard Godard Taets van Amerongen: Het zij mij een eer en genoegen om mijzelf aan u voor te stellen. Ik ben Gerard Godard Taets van Amerongen, geboren in het jaar 1729 en Heer van Oud Amelisweerd vanaf het jaar 1761 tot aan mijn overlijden in 1804. In het jaar 1751 voltrok zich een verbond dat niet alleen mijn leven verrijkte, maar ook de geschiedenis van Oud Amelisweerd kleur gaf. Ik trad in het huwelijk met Anna Susanna Hasselaer. 
+	% jump OptionSection
 % end SectionOne
 
 
 % start SectionTwo
 
-Gerard Godard Taets van Amerongen: Gerard Godard Taets van Amerongen: Het landhuis, een waar pronkstuk, fungeerde als ons zomerverblijf. Hier bracht ik samen met mijn geliefde gezin, bestaande uit mijn vrouw en vier kinderen, en ons toegewijde personeel de warmere seizoenen door. 's Winters verplaatsten wij ons naar de statige stad Utrecht. Naast mijn rol als hoofdbewoner van Oud Amelisweerd, bekleedde ik de hoogwaardige positie van Maarschalk in het Nederkwartier van de provincie Utrecht. Met mijn invloed reikte deze positie over het Noord-Westelijke gebied, waarmee ik een bijdrage mocht leveren aan de militaire aangelegenheden van mijn tijd.
-Gerard Godard Taets van Amerongen: Laat mij u in de geschiedenis voeren, terug naar het jaar 1770, toen de bakermat van mijn geliefde landgoed, het prachtige landhuis, tot stand kwam. In die tijd kende ik de genade van belastingvrijstelling voor mijn grond, een gunst die mij in staat stelde om een weelderig onderkomen te bouwen zonder de zware financiële lasten.
-Gerard Godard Taets van Amerongen: Het bouwproces was een waar avontuur, waar vakmanschap en visie samenkwamen. Het landhuis, als een tastbare droom, rees op uit de aarde van Oud Amelisweerd, met een architectuur doordrongen van elegantie en harmonie met de natuurlijke omgeving.
+	Gerard Godard Taets van Amerongen: Gerard Godard Taets van Amerongen: Het landhuis, een waar pronkstuk, fungeerde als ons zomerverblijf. Hier bracht ik samen met mijn geliefde gezin, bestaande uit mijn vrouw en vier kinderen, en ons toegewijde personeel de warmere seizoenen door. 's Winters verplaatsten wij ons naar de statige stad Utrecht. Naast mijn rol als hoofdbewoner van Oud Amelisweerd, bekleedde ik de hoogwaardige positie van Maarschalk in het Nederkwartier van de provincie Utrecht. Met mijn invloed reikte deze positie over het Noord-Westelijke gebied, waarmee ik een bijdrage mocht leveren aan de militaire aangelegenheden van mijn tijd.
+	Gerard Godard Taets van Amerongen: Laat mij u in de geschiedenis voeren, terug naar het jaar 1770, toen de bakermat van mijn geliefde landgoed, het prachtige landhuis, tot stand kwam. In die tijd kende ik de genade van belastingvrijstelling voor mijn grond, een gunst die mij in staat stelde om een weelderig onderkomen te bouwen zonder de zware financiële lasten.
+	Gerard Godard Taets van Amerongen: Het bouwproces was een waar avontuur, waar vakmanschap en visie samenkwamen. Het landhuis, als een tastbare droom, rees op uit de aarde van Oud Amelisweerd, met een architectuur doordrongen van elegantie en harmonie met de natuurlijke omgeving.
 &
 
 @ Probably
-% jump OptionSection
+	% jump OptionSection
 @ NO!
-% stop
+	% stop
 
 % end SectionTwo
 
 
 % start SectionThree
 
-Unknown: Uhmm...
-&
-Unknown: Well..
-&
-Unknown: Uhhh...
-&
-Unknown: Yes
+	Unknown: Uhmm...
+	&
+	Unknown: Well..
+	&
+	Unknown: Uhhh...
+	&
+	Unknown: Yes
 
-% jump OptionSection
+	% jump OptionSection
 
 % end SectionThree
