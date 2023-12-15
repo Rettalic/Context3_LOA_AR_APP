@@ -257,7 +257,7 @@ public class DialogSystem : MonoBehaviour
         {
             var rect = buttons[i].GetComponent<RectTransform>();
             rect.localPosition = new Vector2(0, 0);
-            rect.sizeDelta = new Vector2(400, 40);
+            rect.sizeDelta = new Vector2(1036, 237);
         }
     }
 
