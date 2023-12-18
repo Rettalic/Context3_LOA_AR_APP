@@ -237,6 +237,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 1930253531487505451, guid: f2d2c8520664ade46a8b361ad68b3d39,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2637382920428245033, guid: f2d2c8520664ade46a8b361ad68b3d39,
         type: 3}
       propertyPath: m_SizeDelta.x
@@ -393,7 +398,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5958032911758169733, guid: f2d2c8520664ade46a8b361ad68b3d39, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2d2c8520664ade46a8b361ad68b3d39, type: 3}

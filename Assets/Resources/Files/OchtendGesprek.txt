@@ -1,51 +1,73 @@
-Gerard Godard Taets van Amerongen: Het zij mij een groot genoegen u te mogen begroeten in de ochtendlijke pracht van mijn nederige stulp, hier in de sfeervolle Vogeltjeskamer van Oud Amelisweerd. 
-Gerard Godard Taets van Amerongen: Met de eerste zonnestralen die door het raam dansen, ontwaakt deze kamer als een serene oase, doordrenkt van de verwondering die de morgen met zich meebrengt. 
-Gerard Godard Taets van Amerongen: Laat ons samen deze ochtend beleven in de vogeltjeskamer, waar kunst en natuur harmoniëren, en moge de schoonheid van deze momenten als een zachte melodie in uw herinnering blijven.
+% start SectionEersteVraag  
+	Gerard Godard Taets van Amerongen: Het zij mij een groot genoegen u te mogen begroeten in de ochtendlijke pracht van mijn nederige stulp, hier in de sfeervolle Vogeltjeskamer van Oud Amelisweerd. 
+	Gerard Godard Taets van Amerongen: Met de eerste zonnestralen die door het raam dansen, ontwaakt deze kamer als een serene oase. Ik nodig u graag uit om samen met mij de betovering van Oud Amelisweerd te verkennen. 
+	Gerard Godard Taets van Amerongen: Misschien, in het licht van deze ochtendlijke pracht, kunnen wij praten over de bouw van het huis, of wellicht wat meer over mijzelf en mijn band met deze betoverende plek.	
+@ Kunt u wat meer vertellen over uwzelf?
+	% jump SectionPersoonlijk
+@ Kunt u meer vertellen over het landhuis? 
+	% jump SectionLandhuis
 
+% end SectionEersteVraag
 
-	% start OptionSection  
+% start SectionPersoonlijk
+	Gerard Godard Taets van Amerongen: Maar natuurlijk, ik vertel U graag wat meer over mijzelf!
+	Gerard Godard Taets van Amerongen: Mijn naam is  Gerard Godard Taets van Amerongen. Maar noem mij Teats, geboren in het jaar 1729 en Heer van Oud Amelisweerd vanaf het jaar 1761. 
+	Gerard Godard Taets van Amerongen: In 1751 trad ik in het huwelijk met de beeldschone Anna Susanna Hasselaer, Ons huwelijk heeft niet alleen liefde gebracht maar ook welvaart.
+	Gerard Godard Taets van Amerongen: Als heer van Oud Amelisweerd bekleedde ik tevens de positie van Maarschalk in het Nederkwartier van Utrecht, met invloed over het Noord-Westelijke gebied, waar ik bijdroeg aan militaire aangelegenheden van mijn tijd.
+	Gerard Godard Taets van Amerongen: Maar ik ben vooral bezig met het beheer van het landgoed. Mijn dagen zijn een mengeling van adelijke plichten en persoonlijk genot.
+@ Uw huwelijk en welvaart, hoe zit dat?
+	% jump SectionHuwelijk
+@ Hoe ziet een dag voor U eruit?
+	% jump SectionActiviteiten
+% end SectionPersoonlijk
 
-@ Kunt u wat meer vertellen over u zelf?
-	% jump SectionOne
-@ Kunt u wat meer vertellen over de bouw van het landhuis?
-	% jump SectionTwo
+% start SectionLandhuis
+	Gerard Godard Taets van Amerongen: Ah, het landhuis. Doordrenkt van geschiedenis en betekenis. Het begon allemaal met mijn verlangen om een thuis te creëren, een symbool van welvaart en schoonheid.
+	Gerard Godard Taets van Amerongen: In het jaar 1770, met belastingvrijstelling op de grond, kon ik eindelijk mijn droom waarmaken en dit prachtige landhuis bouwen. Het huis fungeerde als zomerverblijf, 's winters verplaatsten wij ons naar de statige stad Utrecht.
+	Gerard Godard Taets van Amerongen: Het ontwerp is doordrenkt met klassieke elegantie, de tuinen weerspiegelen de zorgvuldige planning van een landschapsarchitect. Het omliggende bos, met niet minder dan 37 oranjebomen, werd aangelegd gelijktijdig met de bouw van het huis in 1770.
+	Gerard Godard Taets van Amerongen: Elk detail van Oud Amelisweerd vertelt een verhaal. De diverse kamers herbergen kunstwerken uit verschillende tijdperken en culturen, elk met zijn eigen betekenis. 
+	Gerard Godard Taets van Amerongen: Het Chinees behang, een geschenk van het verre oosten via de VOC, vormt een fascinerende brug tussen werelden.
+	Gerard Godard Taets van Amerongen: Hier, in deze gangen en tuinen, komt de geschiedenis tot leven. Oud Amelisweerd is niet alleen een huis; het is een levend monument, een erfenis van mijn visie en toewijding aan de pracht van kunst, natuur en geschiedenis.
+@ Kunt u wat meer vertellen over het chineese behang?
+	% jump SectionBehangVogel
+@ Wat zijn dagelijkese activiteiten die U uitvoert?
+	% jump SectionActiviteiten
+% end SectionLandhuis
 
-% end OptionSection
+% start SectionHuwelijk
+	Gerard Godard Taets van Amerongen: Ah, mijn huwelijk met Anna Susanna Hasselaer, dat was inderdaad een bijzondere gebeurtenis. U moet begrijpen, mijn beste, dat het leven in die dagen bepaalde verplichtingen met zich meebracht.
+	Gerard Godard Taets van Amerongen: Anna en ik hebben elkaar in 1751 het jawoord gegeven, en haar vader, Gerard Aernout Hasselaer, beheerde aanzienlijke financiën bij de Vereenigde Oostindische Compagnie en was een vooraanstaand persoon in Amsterdam, hij was daar namelijk zeven keer burgemeester.
+	Gerard Godard Taets van Amerongen: In deze tijd, met al mijn ambities voor Oud Amelisweerd, is het een welkome gelegenheid om middelen te verkrijgen voor de realisatie van het prachtige landhuis. 
+	Gerard Godard Taets van Amerongen: Dus ja, ons huwelijk diende zeker meerdere doelen, en het heeft de weg vrijgemaakt voor de verwezenlijking van mijn dromen voor dit landgoed.
+@ Bedankt voor het gesprek, ik wens u nog een fijne dag.
+	% jump SectionEind
+% end SectionHuwelijk
 
+% start SectionActiviteiten
+	Gerard Godard Taets van Amerongen: Een typische dag voor mij begint met verantwoordelijkheden en genoegens. 
+	Gerard Godard Taets van Amerongen: Als heer van Oud Amelisweerd en Maarschalk van het Nederkwartier, begin ik vaak met het beheer van dit prachtige landgoed. Van het superviseren van het personeel tot het onderhouden van het landhuis en de omliggende tuinen, elke dag brengt nieuwe uitdagingen en voldoening.
+	Gerard Godard Taets van Amerongen: Als Maarschalk van het Nederkwartier vereist mijn rol ook aandacht voor militaire zaken.
+	Gerard Godard Taets van Amerongen: En dan, aan het einde van de dag, deel ik mijn bevindingen met Anna, mijn geliefde vrouw. Haar inzichten en gezelschap zijn een waardevolle toevoeging aan mijn dagen.
+	Gerard Godard Taets van Amerongen: In de avond bewonderen we samen het betoverende vogelltjes behang, een geschenk van verre oorden, via de VOC naar ons thuis gebracht. Het brengt een stukje van de wereld naar Oud Amelisweerd, en maakt ons huis tot een levendig eerbetoon aan verschillende culturen.
+@ Kunt u wat meer vertellen over uw huwelijk met Anna?
+	% jump SectionHuwelijk
+@ Kunt u wat meer vertellen over het chineese behang?
+	% jump SectionBehangVogel
+% end SectionActiviteiten
 
-% start SectionOne
+% start SectionBehangVogel
+	Gerard Godard Taets van Amerongen: Jawel, een geschenk van het verre oosten, gebracht door de zeilen van de VOC, prijkt nu als een eerbetoon aan de rijke cultuur van China in mijn geliefde landhuis.
+	Gerard Godard Taets van Amerongen: Het is een eerbetoon aan de rijke cultuur van China, geweven met de zijden draden van traditie en meesterschap.
+	Gerard Godard Taets van Amerongen: Elk paneel toont met meesterlijk vakmanschap de gracieuze bewegingen van vogels, hun verenpracht en de sereniteit van hun leefomgeving. 
+	Gerard Godard Taets van Amerongen: Het is bijna alsof de kamer tot leven komt met het getjilp en gefladder van deze gevederde wezens.
+	Gerard Godard Taets van Amerongen: Dit soort behangsels geeft men het gevoel zich in een paradijselijke en exotische wereld te begeven, een utopisch fantasieland.
+	Gerard Godard Taets van Amerongen: Op elke behangbaan is een grote struik afgebeeld met bloemen en met een vogelpaar; een mannetje en een vrouwtje, wat romantiek symboliseert. 
+	Gerard Godard Taets van Amerongen: Het behang vertelt een verhaal van vrijheid, natuurlijke pracht en de subtiele harmonie van het leven, als een eerbetoon aan de kunst van het oosten, die hier in Oud Amelisweerd een centrale plek inneemt tussen mijn geliefde collectie.
+@ Bedankt voor het gesprek, ik wens u nog een fijne dag.
+	% jump SectionEind
+% end SectionBehangVogel
 
-	Unknown: You are $ SET_TYPE_TIME 0,2 $ indeed $ SET_TYPE_TIME 0,05 $ gay
-	Gerard Godard Taets van Amerongen: Het zij mij een eer en genoegen om mijzelf aan u voor te stellen. Ik ben Gerard Godard Taets van Amerongen, geboren in het jaar 1729 en Heer van Oud Amelisweerd vanaf het jaar 1761 tot aan mijn overlijden in 1804. In het jaar 1751 voltrok zich een verbond dat niet alleen mijn leven verrijkte, maar ook de geschiedenis van Oud Amelisweerd kleur gaf. Ik trad in het huwelijk met Anna Susanna Hasselaer. 
-	% jump OptionSection
-% end SectionOne
-
-
-% start SectionTwo
-
-	Gerard Godard Taets van Amerongen: Gerard Godard Taets van Amerongen: Het landhuis, een waar pronkstuk, fungeerde als ons zomerverblijf. Hier bracht ik samen met mijn geliefde gezin, bestaande uit mijn vrouw en vier kinderen, en ons toegewijde personeel de warmere seizoenen door. 's Winters verplaatsten wij ons naar de statige stad Utrecht. Naast mijn rol als hoofdbewoner van Oud Amelisweerd, bekleedde ik de hoogwaardige positie van Maarschalk in het Nederkwartier van de provincie Utrecht. Met mijn invloed reikte deze positie over het Noord-Westelijke gebied, waarmee ik een bijdrage mocht leveren aan de militaire aangelegenheden van mijn tijd.
-	Gerard Godard Taets van Amerongen: Laat mij u in de geschiedenis voeren, terug naar het jaar 1770, toen de bakermat van mijn geliefde landgoed, het prachtige landhuis, tot stand kwam. In die tijd kende ik de genade van belastingvrijstelling voor mijn grond, een gunst die mij in staat stelde om een weelderig onderkomen te bouwen zonder de zware financiële lasten.
-	Gerard Godard Taets van Amerongen: Het bouwproces was een waar avontuur, waar vakmanschap en visie samenkwamen. Het landhuis, als een tastbare droom, rees op uit de aarde van Oud Amelisweerd, met een architectuur doordrongen van elegantie en harmonie met de natuurlijke omgeving.
-&
-
-@ Probably
-	% jump OptionSection
-@ NO!
-	% stop
-
-% end SectionTwo
-
-
-% start SectionThree
-
-	Unknown: Uhmm...
-	&
-	Unknown: Well..
-	&
-	Unknown: Uhhh...
-	&
-	Unknown: Yes
-
-	% jump OptionSection
-
-% end SectionThree
+% start SectionEind
+	Gerard Godard Taets van Amerongen: Welnu, waarde bezoeker, ik waardeer uw gezelschap en de interesse die u toonde in Oud Amelisweerd. Moge de rijke geschiedenis en culturele schatten van dit landgoed u nog lang bijblijven.
+	Gerard Godard Taets van Amerongen: Als u ooit de behoefte voelt om terug te keren, zijn de deuren van Oud Amelisweerd altijd voor u geopend. Vaarwel.
+% end SectionEind

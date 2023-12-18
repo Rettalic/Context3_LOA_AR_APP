@@ -41,6 +41,11 @@ public class DialogSystem : MonoBehaviour
     private int index;
     private bool IsWriting;
 
+    public void StartDialogue()
+    {
+        SetDialog(textFile);
+    }
+
     private void Awake()
     {
         foreach (var item in conditionNames)
