@@ -1,5 +1,6 @@
 % start SectionEersteVraag  
-	Gerard Godard Taets van Amerongen: Het zij mij een groot genoegen u te mogen begroeten in de ochtendlijke pracht van mijn nederige stulp, hier in de sfeervolle Vogeltjeskamer van Oud Amelisweerd. Met de eerste zonnestralen die door het raam dansen, ontwaakt deze kamer als een serene oase. Ik nodig u graag uit om samen met mij de betovering van Oud Amelisweerd te verkennen. 
+
+	Gerard Godard Taets van Amerongen: $ PLAY_AUDIO $ Het zij mij een groot genoegen u te mogen begroeten in de ochtendlijke pracht van mijn nederige stulp, hier in de sfeervolle Vogeltjeskamer van Oud Amelisweerd. Met de eerste zonnestralen die door het raam dansen, ontwaakt deze kamer als een serene oase. Ik nodig u graag uit om samen met mij de betovering van Oud Amelisweerd te verkennen. 
 	Gerard Godard Taets van Amerongen: Misschien, in het licht van deze ochtendlijke pracht, kunnen wij praten over de bouw van het huis, of wellicht wat meer over mijzelf en mijn band met deze betoverende plek.	
 @ Kunt u wat meer vertellen over uwzelf?
 	% jump SectionPersoonlijk

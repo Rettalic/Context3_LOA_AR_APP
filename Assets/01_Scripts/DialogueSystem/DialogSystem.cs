@@ -18,6 +18,10 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private GameObject buttonPanel;
     [SerializeField] private GameObject buttonPrefab;
 
+
+    public List<AudioClip> TaetsAudio;
+    public AudioSource theAudio;
+
     public string textFile = "OchtendGesprek";
 
     [Header("CommandSettings")]
