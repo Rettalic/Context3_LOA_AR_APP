@@ -64,6 +64,8 @@ public class DialogSystem : MonoBehaviour
 
         foreach (var item in fileName)
             Files.Add(item.name, item.ToString().Replace("\n\r\n", "\n").Split("\n"));
+
+        StartDialogue();
     }
 
     private void OnEnable()
