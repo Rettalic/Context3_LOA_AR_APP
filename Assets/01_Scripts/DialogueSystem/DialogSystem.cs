@@ -200,11 +200,6 @@ public class DialogSystem : MonoBehaviour
         if (tmp[0] == commandChar)
         {
             product = line.Split(" ");
-            for (int i = 0; i < product.Length; i++)
-            {
-
-                Debug.Log(product[i]);
-            }
             return true;
         }
 
@@ -246,7 +241,7 @@ public class DialogSystem : MonoBehaviour
 
             if (TryCheckCommand(file[index], sectionChar, out string[] product))
             {
-                Debug.Log(product[1]);
+               // Debug.Log(product[1]);
                 if (product[1] == "jump")
                 {
                     Debug.Log("here");

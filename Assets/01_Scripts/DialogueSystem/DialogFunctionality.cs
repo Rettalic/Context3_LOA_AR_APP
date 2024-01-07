@@ -4,7 +4,7 @@ public class DialogFunctionality
     public DialogSystem Owner;
 
     public void SetEvents() {
-        EventManager<DialogEvents, int>.Subscribe(DialogEvents.PLAY_AUDIO, PlayAudio);
+        EventManager<DialogEvents, float>.Subscribe(DialogEvents.PLAY_AUDIO, PlayAudio);
         Debug.Log("Te");
         EventManager<DialogEvents, bool>.Subscribe(DialogEvents.ON_TEST_EVENT, OnTestCallRun);
         EventManager<DialogEvents, float>.Subscribe(DialogEvents.SET_TYPE_TIME, SetSpeed);
@@ -18,10 +18,11 @@ public class DialogFunctionality
         Owner.CurrentTimeBetweenChars = speed;
     }
 
-    public void PlayAudio(int index)
+    public void PlayAudio(float index)
     {
         Debug.Log("AAAA");
-        Owner.theAudio.clip = Owner.TaetsAudio[2];
+        Owner.theAudio.clip = Owner.TaetsAudio[(int)index];
+        Debug.Log(Owner.TaetsAudio.Count);
         Owner.theAudio.Play();
     }
 }

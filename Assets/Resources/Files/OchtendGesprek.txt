@@ -1,6 +1,5 @@
 % start SectionEersteVraag  
-
-	Gerard Godard Taets van Amerongen: $ PLAY_AUDIO $ Het zij mij een groot genoegen u te mogen begroeten in de ochtendlijke pracht van mijn nederige stulp, hier in de sfeervolle Vogeltjeskamer van Oud Amelisweerd. Met de eerste zonnestralen die door het raam dansen, ontwaakt deze kamer als een serene oase. Ik nodig u graag uit om samen met mij de betovering van Oud Amelisweerd te verkennen. 
+	Gerard Godard Taets van Amerongen: Het zij mij een groot genoegen u te mogen begroeten in de ochtendlijke pracht van mijn nederige stulp, hier in de sfeervolle Vogeltjeskamer van Oud Amelisweerd. Met de eerste zonnestralen die door het raam dansen, ontwaakt deze kamer als een serene oase. Ik nodig u graag uit om samen met mij de betovering van Oud Amelisweerd te verkennen. 
 	Gerard Godard Taets van Amerongen: Misschien, in het licht van deze ochtendlijke pracht, kunnen wij praten over de bouw van het huis, of wellicht wat meer over mijzelf en mijn band met deze betoverende plek.	
 @ Kunt u wat meer vertellen over uwzelf?
 	% jump SectionPersoonlijk
@@ -20,7 +19,7 @@
 % end SectionPersoonlijk
 
 % start SectionLandhuis
-	Gerard Godard Taets van Amerongen: Ah, het landhuis. Doordrenkt van geschiedenis en betekenis. Het begon allemaal met mijn verlangen om een thuis te creëren, een symbool van welvaart en schoonheid. In het jaar 1770, met belastingvrijstelling op de grond, kon ik eindelijk mijn droom waarmaken en dit prachtige landhuis bouwen. Het huis fungeerde als zomerverblijf, 's winters verplaatsten wij ons naar de statige stad Utrecht.
+	Gerard Godard Taets van Amerongen: $ PLAY_AUDIO 0 $ Ah, $ SET_TYPE_TIME 0,05 $ het landhuis. Doordrenkt van geschiedenis en betekenis. Het begon allemaal met mijn verlangen om een thuis te creëren, een symbool van welvaart en schoonheid. In het jaar 1770, met belastingvrijstelling op de grond, kon ik eindelijk mijn droom waarmaken en dit prachtige landhuis bouwen. Het huis fungeerde als zomerverblijf, 's winters verplaatsten wij ons naar de statige stad Utrecht.
 	Gerard Godard Taets van Amerongen: Het ontwerp is doordrenkt met klassieke elegantie, de tuinen weerspiegelen de zorgvuldige planning van een landschapsarchitect. Het omliggende bos, met niet minder dan 37 oranjebomen, werd aangelegd gelijktijdig met de bouw van het huis in 1770.
 	Gerard Godard Taets van Amerongen: Elk detail van Oud Amelisweerd vertelt een verhaal. De diverse kamers herbergen kunstwerken uit verschillende tijdperken en culturen, elk met zijn eigen betekenis. Het Chinees behang, een geschenk van het verre oosten via de VOC, vormt een fascinerende brug tussen werelden.
 	Gerard Godard Taets van Amerongen: Hier, in deze gangen en tuinen, komt de geschiedenis tot leven. Oud Amelisweerd is niet alleen een huis; het is een levend monument, een erfenis van mijn visie en toewijding aan de pracht van kunst, natuur en geschiedenis.
@@ -31,7 +30,7 @@
 % end SectionLandhuis
 
 % start SectionHuwelijk
-	Gerard Godard Taets van Amerongen: Ah, mijn huwelijk met Anna Susanna Hasselaer, dat was inderdaad een bijzondere gebeurtenis. U moet begrijpen, mijn beste, dat het leven in die dagen bepaalde verplichtingen met zich meebracht. Anna en ik hebben elkaar in 1751 het jawoord gegeven, en haar vader, Gerard Aernout Hasselaer, beheerde aanzienlijke financiën bij de Vereenigde Oostindische Compagnie en was een vooraanstaand persoon in Amsterdam, hij was daar namelijk zeven keer burgemeester.
+	Gerard Godard Taets van Amerongen: $ PLAY_AUDIO 1 $ Ah, mijn huwelijk met Anna Susanna Hasselaer, dat was inderdaad een bijzondere gebeurtenis. U moet begrijpen, mijn beste, dat het leven in die dagen bepaalde verplichtingen met zich meebracht. Anna en ik hebben elkaar in 1751 het jawoord gegeven, en haar vader, Gerard Aernout Hasselaer, beheerde aanzienlijke financiën bij de Vereenigde Oostindische Compagnie en was een vooraanstaand persoon in Amsterdam, hij was daar namelijk zeven keer burgemeester.
 	Gerard Godard Taets van Amerongen: In deze tijd, met al mijn ambities voor Oud Amelisweerd, is het een welkome gelegenheid om middelen te verkrijgen voor de realisatie van het prachtige landhuis. 
 	Gerard Godard Taets van Amerongen: Dus ja, ons huwelijk diende zeker meerdere doelen, en het heeft de weg vrijgemaakt voor de verwezenlijking van mijn dromen voor dit landgoed.
 @ Bedankt voor het gesprek, ik wens u nog een fijne dag.
