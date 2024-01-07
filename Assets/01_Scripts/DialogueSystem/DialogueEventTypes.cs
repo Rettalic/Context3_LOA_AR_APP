@@ -15,5 +15,4 @@ public enum DialogueEventType
     changeCharacter = 2,
     changeUI = 3,
 
-
 }

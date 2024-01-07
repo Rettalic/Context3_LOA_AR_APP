@@ -264,12 +264,9 @@ public class DialogSystem : MonoBehaviour
         }
 
         RectTransform containerRect = buttonContainer.GetComponent<RectTransform>();
-        for (int i = 0; i < buttons.Count; i++)
-        {
-            var rect = buttons[i].GetComponent<RectTransform>();
-            rect.localPosition = new Vector2(0, 0);
-            rect.sizeDelta = new Vector2(1036, 237);
-        }
+   
+        var rect = GetComponent<RectTransform>();
+        rect.sizeDelta = new Vector2(800, 237);
     }
 
     private string ConditionChecker(string[] product)
