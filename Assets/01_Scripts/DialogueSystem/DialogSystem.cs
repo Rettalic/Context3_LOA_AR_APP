@@ -80,10 +80,7 @@ public class DialogSystem : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-            SetDialog(textFile);
-
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0) && IsWriting == false)
             NextLine();
     }
 
@@ -359,7 +356,7 @@ public class DialogSystem : MonoBehaviour
             yield return new WaitForSeconds(CurrentTimeBetweenChars);
         }
 
-        CheckForAutoSkip();
+       // CheckForAutoSkip();
         IsWriting = false;
     }
 
@@ -380,7 +377,7 @@ public class DialogSystem : MonoBehaviour
 
         mainText.text = new string(charList.ToArray());
 
-        CheckForAutoSkip();
+        //CheckForAutoSkip();
         IsWriting = false;
     }
 

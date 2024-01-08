@@ -1045,7 +1045,28 @@ MonoBehaviour:
   buttonPanel: {fileID: 3032592949732292552}
   buttonPrefab: {fileID: 2599406538273020352, guid: 59c67196b6e0ae34b8b4443196c471a9,
     type: 3}
-  TaetsAudio: []
+  TaetsAudio:
+  - {fileID: 8300000, guid: 410392482b0cce3408587c76160b8d2a, type: 3}
+  - {fileID: 8300000, guid: a0ff5f71476f80140b011c2390b1cb08, type: 3}
+  - {fileID: 8300000, guid: c00f3d00238407b4d944f9da1276c4ad, type: 3}
+  - {fileID: 8300000, guid: 4ead804abfea005478877e7d84bf3a87, type: 3}
+  - {fileID: 8300000, guid: f7ba00d2d25d5154593ac56415e2a1b2, type: 3}
+  - {fileID: 8300000, guid: 4b3466a08722d0141877be0e5a09a7f1, type: 3}
+  - {fileID: 8300000, guid: 281a5e60baafa7844bc5f7dff1deaf95, type: 3}
+  - {fileID: 8300000, guid: 68d6cbfb549a02f43b84057b63b447c8, type: 3}
+  - {fileID: 8300000, guid: 21b498caff6bc3e44a20830df11de97a, type: 3}
+  - {fileID: 8300000, guid: c6b8272ded81d304eb3e34b04a992b24, type: 3}
+  - {fileID: 8300000, guid: 29fbe88fc18d21a42bec621470963faa, type: 3}
+  - {fileID: 8300000, guid: f636223271169ec4d85cf7a147971250, type: 3}
+  - {fileID: 8300000, guid: c4a68419f2d695c45804f28f2cb0e3d3, type: 3}
+  - {fileID: 8300000, guid: 503e63fd29624254b9d4c0e2bf8ebb77, type: 3}
+  - {fileID: 8300000, guid: b0e77145f002bee429f1a1c4cd208163, type: 3}
+  - {fileID: 8300000, guid: b7a16580b8b2f07408d97fcbe5a3d9da, type: 3}
+  - {fileID: 8300000, guid: 54789cddf76d8094d9f3035b296a5343, type: 3}
+  - {fileID: 8300000, guid: 914091604a54cc1488842e7b78c32dae, type: 3}
+  - {fileID: 8300000, guid: ba4aa05d56363c8428f0ca6f85ccbcc1, type: 3}
+  - {fileID: 8300000, guid: ac8c5ff45d30f794cac63f87c3bec0f4, type: 3}
+  - {fileID: 8300000, guid: 3a1c7669219b3ef49856ed5fc20d3c39, type: 3}
   theAudio: {fileID: 5441132064367660160}
   textFile: OchtendGesprek
   commandChar: 36
