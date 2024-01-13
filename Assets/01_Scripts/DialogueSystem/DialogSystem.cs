@@ -17,6 +17,10 @@ public class DialogSystem : MonoBehaviour
     [SerializeField] private GameObject buttonContainer;
     [SerializeField] private GameObject buttonPanel;
     [SerializeField] private GameObject buttonPrefab;
+    
+    
+    public GameObject buttonContinue;
+    public GameObject buttonRestart;
 
 
     public List<AudioClip> TaetsAudio;
