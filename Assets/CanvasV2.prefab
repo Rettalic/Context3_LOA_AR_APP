@@ -171,7 +171,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1083446435958845220
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1045,6 +1045,8 @@ MonoBehaviour:
   buttonPanel: {fileID: 3032592949732292552}
   buttonPrefab: {fileID: 2599406538273020352, guid: 59c67196b6e0ae34b8b4443196c471a9,
     type: 3}
+  buttonContinue: {fileID: 1955142897963657556}
+  buttonRestart: {fileID: 6363060567513103188}
   TaetsAudio:
   - {fileID: 8300000, guid: acb3e4a6385a81b4a8c108ff7251f466, type: 3}
   - {fileID: 8300000, guid: 349dfc50dc357eb4485282f03724340b, type: 3}
