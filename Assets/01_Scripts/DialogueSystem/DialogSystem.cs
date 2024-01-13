@@ -137,6 +137,7 @@ public class DialogSystem : MonoBehaviour
 
         if (index >= currentDialog.Length)
         {
+            buttonRestart.SetActive(true);
             StopDialog();
             return;
         }
@@ -311,6 +312,7 @@ public class DialogSystem : MonoBehaviour
 
     private IEnumerator DisplayText(string text)
     {
+        buttonContinue.SetActive(false);
         IsWriting = true;
 
         yield return new WaitForEndOfFrame();
@@ -360,7 +362,7 @@ public class DialogSystem : MonoBehaviour
             yield return new WaitForSeconds(CurrentTimeBetweenChars);
         }
 
-       // CheckForAutoSkip();
+        buttonContinue.SetActive(true);
         IsWriting = false;
     }
 
