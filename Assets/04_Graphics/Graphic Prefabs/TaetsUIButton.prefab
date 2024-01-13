@@ -131,5 +131,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   theObj: {fileID: 8483033128063486051, guid: b061ff6ad2fe4024791d42d87aba63c5, type: 3}
-  canvasObj: {fileID: 7545361240225457510, guid: ec99965d850de2f42996d1718e5ecf9c,
+  canvasObj: {fileID: 7545361240225457510, guid: f76b4962095a0754487bda85bdf0dd80,
     type: 3}
